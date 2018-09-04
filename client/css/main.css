@@ -7,7 +7,19 @@
   margin: 0 auto;
 }
 
+#menu {
+  margin-top: 15px;
+}
+
+.menu-desc{
+  margin: 0 auto;
+}
 #resize-img1 {
   width:370px;
   height: 247px;
+}
+
+.final-image{
+  width: 422px;
+height: 247px;
 }

@@ -50,15 +50,15 @@ app.post('/cateringRequest', function (req, res){
 
 app.post('/contact', function (req, res){
   let mailOpts, smtpTrans;
-  var gmail_email = 'dlumastest';
-  var gmail_pass = 'dlumastest';
+  var username = process.env.GMAIL_USERNAME;
+  var password = process.env.GMAIL_PASSWORD;
   smtpTrans = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     auth: {
-      user: 'dlumastest@gmail.com',
-      pass: 'dummy512'
+      user: username,
+      pass: password
     },
     tls: {
       rejectUnauthorized: false
@@ -66,7 +66,7 @@ app.post('/contact', function (req, res){
   });
   mailOpts = {
     from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-    to: 'dlumastest@gmail.com',
+    to: username,
     subject: 'New message from sophieselection.com',
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
   };
