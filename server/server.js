@@ -6,7 +6,7 @@ export const app = express();
 
 app.set('view engine', 'ejs');
 
-app.use('/', express.static('client'));
+app.use('/', express.static('dist'));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.post('/cateringRequest', function (req, res){

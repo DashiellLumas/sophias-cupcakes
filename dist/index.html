@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sophia's Cupcakes</title>
+	<link rel="shortcut icon" type="images/x-icon" href="images/favico.png">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Volkhov:400,700&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+	<header>
+
+		<!-- NAVBAR -->
+		<div class="navbar">
+			<div class="container">
+				<!-- LOGO -->
+				<a href="#welcome-sec" class="logo">Sophia's <span>Cupcakes</span></a>
+				<!-- MENU -->
+				<ul id="menu" class="main-menu">
+					<li><a href="#welcome-sec">Welcome</a></li>
+					<li><a href="#our-story-sec">My Story</a></li>
+					<li><a href="#reserv-sec">Book Your Event</a></li>
+					<li><a href="#menu-sec">Menu</a></li>
+					<li><a href="#gallery-sec">Gallery</a></li>
+					<li><a href="#contact-sec">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<!-- SLIDER -->
+	<div class="slider" id="welcome-sec">
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<img src="images/slideImage1.png" alt="slide-image">
+					<div class="content-wraper">
+						<div class="content">
+							<p class="big-text">Sophia's</p>
+							<p class="small-text">Cupcakes</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img src="images/slide2.jpg" alt="slide-image">
+					<div class="content-wraper">
+						<div class="content">
+							<p class="small-text">Delicious</p>
+							<p class="big-text">Home-Baked</p>
+							<p class="small-text">Cupcakes</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- WELCOME / OUR STORY -->
+	<div class="our-story" id="our-story-sec">
+		<div class="container">
+			<div class="section-text">
+				<h2 class="section-title">Welcome to Sophia's Cupcakes</h2>
+				<p class="body-text">
+					Baking sweet memories.
+				</p>
+			</div>
+			<div class="row">
+				<div class="col-1-2">
+					<!-- <p class="section-title story">My Story</p> -->
+					<p class="body-text story">
+						For as long as I can remember, I have loved baking in the kitchen. Early on in life I discovered the joys of making cupcakes, and I loved to experiment with new flavors, creations and designs. In 2015 I decided to follow my passion and turn this little hobby of mine
+						into a reality. My recipe box is constantly expanding with delicious recipes that I have discovered or created.
+						Each flavor has a unique story that I look forward to sharing with you!
+					</p>
+				</div>
+				<div class="col-1-2">
+					<img src="images/story-img.png" alt="story-image" class="story-img">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CATERING SECTION -->
+	<form action="/cateringRequest" id="contact-form" method="post" role="form">
+		<div class="reservation-section" id="reserv-sec">
+			<div class="container">
+				<p class="title">Book Your Next </p>
+				<h2 class="section-title">Catering Event</h2>
+				<div class="row">
+					<div class="col-1-3">
+						<p class="body-text">Name:</p>
+						<input id="reservationName" name="reservationName" type="text" placeholder="Enter Name">
+					</div>
+					<div class="col-1-3">
+						<p class="body-text">Email:</p>
+						<input id="reservationEmail"  name="reservationEmail" type="text" placeholder="Enter Email">
+					</div>
+					<div class="col-1-3">
+						<p class="body-text">Phone Number:</p>
+						<input id="phonenumber"  name="phonenumber" type="text" placeholder="Enter Phone Number">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1-3">
+						<p class="body-text">Date and Time:</p>
+						<input id="dateAndTime" name="dateAndTime" type="text" placeholder="Enter Date and Time">
+					</div>
+					<div class="col-1-3">
+						<p class="body-text">Number of People:</p>
+						<input id="numberOfPeople"  name="numberOfPeople" type="text" placeholder="Enter Number of People">
+					</div>
+					<div class="col-1-3">
+						<p class="body-text">Additional Info and Requests:</p>
+						<input id="requests"  name="requests" type="text" placeholder="Enter Your Requests">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1-3">
+						<input type="submit" value="Submit">
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<!-- MENU SECTION -->
+	<div class="menu-section" id="menu-sec">
+		<div class="container">
+			<!-- <span class="icon"><img id="our-menu-span" src="images/ico3.png" alt="icon"></span> -->
+			<h2 id="menu" class="section-title">Our Menu</h2>
+			<div class="row">
+				<div class="col-1-3">
+					<h3 class="title">Regular</h3>
+					<div class="meal-info">
+						<p class="name">Strawberry Filling</p>
+						<p class="body-text">Buttercream frosting. Stuffed with fresh strawberries.</p>
+						<p class="price">$39.99</p>
+					</div>
+					<div class="meal-info">
+						<p class="name">German Chocolate Cake</p>
+						<p class="body-text">Walnut topping with a rich chocolate layer.</p>
+						<p class="price">$39.99</p>
+					</div>
+					<div class="meal-info">
+						<p class="name">Kiwi</p>
+						<p class="body-text">Fresh kiwi fruit with a lemon frosting filling.</p>
+						<p class="price">$49.99</p>
+					</div>
+					<div class="meal-info">
+						<p class="name">Vanilla</p>
+						<p class="body-text">Classic vanilla frosting.</p>
+						<p class="price">$39.99</p>
+					</div>
+				</div>
+				<div class="col-1-3">
+					<h3 class="title">Gluten-Free</h3>
+					<div class="meal-info">
+						<p class="name">Lime-Coconut</p>
+						<p class="body-text">Agave syrup with a tart lime buttercream.</p>
+						<p class="price">$49.99</p>
+					</div>
+					<div class="meal-info">
+						<p class="name">Carrot Cake</p>
+						<p class="body-text">Dense Filling with rich cream cheese.</p>
+						<p class="price">$49.99</p>
+					</div>
+					<div class="meal-info">
+						<p class="name">Banana Custard & Peanut Butter</p>
+						<p class="body-text">Sweet banana filling mixed with rich, creamy peanut butter.</p>
+						<p class="price">$49.99</p>
+					</div>
+					<div class="meal-info">
+						<p class="name">Pumpkin-Ginger</p>
+						<p class="body-text">Golden caramel sauce with a spicy filling.</p>
+						<p class="price">$39.99</p>
+					</div>
+				</div>
+				<div class="col-1-3">
+					<h3 class="title">Vegan</h3>
+					<div class="meal-info">
+						<p class="name">Strawberry Shortcake</p>
+						<p class="body-text">Light and airy with whipped cream.</p>
+						<p class="price">$54.99</p>
+					</div>
+					<div class="meal-info">
+						<p class="name">Oreo with Vanilla Frosting</p>
+						<p class="body-text">Chocolate and vanilla frosting with an oreo base.</p>
+						<p class="price">$49.99</p>
+					</div>
+					<div class="meal-info">
+						<p class="name">Apple Pie Cinnamon</p>
+						<p class="body-text">Delicious apple pie filling with vanilla buttercream.</p>
+						<p class="price">$54.99</p>
+					</div>
+					<div class="meal-info">
+						<p class="name">Double Chocolate</p>
+						<p class="body-text">Chocolate frosting with a chocolate ganache sauce inside.</p>
+						<p class="price">$49.99</p>
+					</div>
+				</div>
+			</div>
+			<span class="menu-desc">Additional Flavors available upon request. 25 cupcakes per order.</span>
+		</div>
+	</div>
+
+	<!-- TESTIMONIALS / WHAT PEOPLE SAY -->
+	<div class="testimonials-section">
+		<div class="container">
+			<i class="ion-android-chat"></i>
+			<h2 class="section-title">Reviews</h2>
+			<div class="flexslider2">
+				<ul class="slides">
+					<li>
+						<p class="testimonial-txt">
+							I was pleasantly surprised when Sofia brought my custom cupcakes to my birthday party. They looked amazing!!
+							It was delicious and she did a fantastic job. Thank you very much!!
+						</p>
+						<p class="client">Petunia <span>G.</span></p>
+					</li>
+					<li>
+						<p class="testimonial-txt">
+							The kiwi cupcakes that I ordered were very professionally done.
+							The fruit tasted amazing and I will definitely be ordering again for my next event!
+						</p>
+						<p class="client">Allison <span>K.</span></p>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- GALLERY SECTION -->
+	<div class="gallery-section" id="gallery-sec">
+		<div class="container">
+			<!-- <span class="icon"><img src="images/ico4.png" alt="icon"></span> -->
+			<h2 class="section-title">Gallery</h2>
+			<div class="parent-container">
+				<div class="row">
+					<div class="col-1-3">
+						<a href="images/gallery-img1.png" class="img-wrap">
+							<img id="resize-img1" src="images/gallery-img1.png" alt="gallery-img">
+							<div class="img-hover"></div>
+						</a>
+					</div>
+					<div class="col-1-3">
+						<a href="images/gallery-img2.png" class="img-wrap">
+							<img src="images/gallery-img2.png" alt="gallery-img2">
+							<div class="img-hover"></div>
+						</a>
+					</div>
+					<div class="col-1-3">
+						<a href="images/gallery-img3.png" class="img-wrap">
+							<img src="images/gallery-img3.png" alt="gallery-img3">
+							<div class="img-hover"></div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-1-3">
+						<a href="images/gallery-img4.png" class="img-wrap">
+							<img src="images/gallery-img4.png" alt="gallery-img4">
+							<div class="img-hover"></div>
+						</a>
+					</div>
+					<div class="col-1-3">
+						<a href="images/gallery-img5.png" class="img-wrap">
+							<img src="images/gallery-img5.png" alt="gallery-img5">
+							<div class="img-hover"></div>
+						</a>
+					</div>
+					<div class="col-1-3">
+						<a href="images/gallery-img6.png" class="img-wrap">
+							<img src="images/gallery-img6.png" alt="gallery-img6" class="final-image">
+							<div class="img-hover"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CONTACT US -->
+	<div class="contact-section" id="contact-sec">
+		<div class="container">
+			<!-- <span class="icon"><img src="images/ico5.png" alt="icon"></span> -->
+			<h2 class="section-title">Contact</h2>
+			<form action="/contact" id="contact-form" method="post" role="form">
+				<div class="container-sm">
+					<div class="row">
+						<div class="col-1-2">
+							<p class="body-text">Name:</p>
+							<input id="name" name="name" type="text" placeholder="Enter Your Name">
+						</div>
+						<div class="col-1-2">
+							<p class="body-text">Email:</p>
+							<input id="email" name="email" type="text" placeholder="Enter Your Email">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-1">
+							<p class="body-text">Message:</p>
+							<textarea id="message" name="message" placeholder="Enter Your Message"></textarea>
+							<input type="submit" value="Send Message">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<div class="footer-copyright">
+				<div class="row">
+					<div class="col-1-3">
+						<div class="logo">
+							<h3 class="title">Sophie's</h3>
+							<p class="body-text">
+								Selection
+							</p>
+						</div>
+					</div>
+					<div class="col-1-3">
+						<div class="copyright">
+							<p class="body-text">
+								© 2017 Sophie's Selection.
+							</p>
+							<p class="body-text">
+								All rights reserved.
+							</p>
+						</div>
+					</div>
+					<div class="col-1-3">
+						<!-- <div class="social-media clearfix">
+							<a href="#" class="social">
+								<i class="ion-social-facebook"></i>
+							</a>
+							<a href="#" class="social">
+								<i class="ion-social-instagram-outline"></i>
+							</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- SCRIPTS -->
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
